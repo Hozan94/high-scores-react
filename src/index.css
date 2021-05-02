@@ -1,13 +1,59 @@
+html{
+    font-size: 25px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'VT323', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.all-tables{
+  display :flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.country-table, .highest-score-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom:25px ;
+    padding-bottom: 15px;
+    border: 10px dashed #f0c808;
+}
+
+table{
+    border-style: solid dashed dashed dashed;
+    border-width: 6px;
+    border-color: #dd1c1a;;
+    width: 90%;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0c808;
+    padding: 5px;
+}
+
+.table-title{
+    font-size: 2.2rem;
+    color: #9d4edd;
+}
+
+.country-title{
+    color: #9d4edd;
+}
+
+.btn{
+  background-color: #086788; 
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  color: white;
+  padding: 12px 50px;
+  margin-bottom: 10px;
 }

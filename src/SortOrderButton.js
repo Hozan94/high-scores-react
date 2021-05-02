@@ -3,6 +3,7 @@ import ascendingScores from "./AscendingScores";
 import descendingScores from "./DescendingScores";
 import sortedCountries from "./SortedCountries";
 import HighScoreTable from "./HighScoreTable";
+import WorldWideTable from "./WorldWideTable";
 
 const SortOrderButton = function () {
     const [order, setOrder] = useState(descendingScores);
@@ -16,9 +17,10 @@ const SortOrderButton = function () {
     }
 
     return (
-        <section className="scores-section">
-            <h1>High Scores Per Country</h1>
-            <button onClick={changeOrder}>Sort </button>
+        <section className="all-tables">
+            <WorldWideTable />
+            <h1 className="table-title">High Scores Per Country</h1>
+            <button className="btn" onClick={changeOrder}>Sort </button>
             <HighScoreTable sortedCountries={sortedCountries} />
         </section>
     );
